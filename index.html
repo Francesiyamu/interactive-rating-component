@@ -3,47 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+ 
 </head>
 <body>
 
   <!-- Rating state start -->
+  <main class="container">
+      <div class="rating-container">
+        <figure id="star-figure">
+          <img src="./images/icon-star.svg" alt="star icon" class="star-icon" width="48" height="48">
+        </figure>
+        <div class="container-text-content">
+          <h1>How did we do?</h1>
+          <p>Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
+          <div class="rating-buttons">
+            <button class="rating-button">1</button>
+            <button class="rating-button">2</button>
+            <button class="rating-button">3</button>
+            <button class="rating-button">4</button>
+            <button class="rating-button">5</button>
+          </div>
+          <button class="submit-button">Submit</button>
+        </div>
+      </div>
+    </main>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+  <div class="thank-you-container hidden">
+    <figure class="thank-you-figure">
+      <img src="./images/illustration-thank-you.svg" alt="thank you illustration" class="thank-you-image">
+    </figure>
+    <p class="selected-rating"> <!-- Add rating here --> </p>
+    <h1>Thank you!</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </div>
   <!-- Thank you state end -->
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Frances Iyamu</a>.
   </div>
+
+ <script src="JS/index.js">
+
+   /*
+    const ratingButtons = document.querySelectorAll('.rating-buttons .rating-button');
+  
+     ratingButtons.forEach(button => {
+      button.addEventListener('click', () => {
+      // Your code here, e.g., highlight the selected button
+      console.log('Selected rating:', button.innerHTML);
+    
+      button.classList.add('selected');
+         ratingButtons.forEach(btn => {
+          //For every button except the one that was just clicked (btn !== button), it removes the selected class.
+          //This ensures that only the clicked button will have the selected class, so only one button appears selected at a time.
+        if (btn !== button) {
+          btn.classList.remove('selected');
+        }
+      });
+    });
+  });
+
+  const submitButton = document.querySelector('.submit-button');
+  submitButton.addEventListener('submit', (event) =>{
+    event.preventDefault(); // Prevents the default form submission behavior
+    //You wnat to select the currently selected button
+    const selectedButton = document.querySelector('.rating-buttons .rating-button.selected');
+    
+    if (selectedButton) {
+      const selectedRating = selectedButton.innerHTML;
+      console.log('Selected rating:', selectedRating);
+      
+      // Update the thank you message with the selected rating
+      const thankYouMessage = document.querySelector('.selected-rating');
+      thankYouMessage.textContent = `You selected ${selectedRating} out of 5`;
+      
+      // Hide the rating container and show the thank you container
+      document.querySelector('.rating-container').classList.add('hidden');
+      thankYoucontainer.classList.remove('hidden');
+    } else {
+      alert('Please select a rating before submitting.');
+    }
+  })
+
+
+
+
+  const thankYoucontainer = document.querySelector('.thank-you-container'); */
+  
+  </script>
 </body>
 </html>
