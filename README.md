@@ -1,5 +1,5 @@
 # interactive-rating-component
-This is a nice, small project to practice handling user interactions and updating the DOM. 
+Users often want to quickly provide feedback or rate a service, but many interfaces make this process confusing or unintuitive. This project provides a simple, interactive way for users to select a rating and immediately see a confirmation, making the feedback process straightforward and user-friendly.
 
 ### The challenge
 
