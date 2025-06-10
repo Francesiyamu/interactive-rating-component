@@ -10,7 +10,7 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="css/style.css">
- 
+  <script src="JS/index.js" defer></script>
 </head>
 <body>
 
@@ -58,54 +58,6 @@
     Coded by <a href="#">Frances Iyamu</a>.
   </div>
 
- <script src="JS/index.js">
-
-   /*
-    const ratingButtons = document.querySelectorAll('.rating-buttons .rating-button');
-  
-     ratingButtons.forEach(button => {
-      button.addEventListener('click', () => {
-      // Your code here, e.g., highlight the selected button
-      console.log('Selected rating:', button.innerHTML);
-    
-      button.classList.add('selected');
-         ratingButtons.forEach(btn => {
-          //For every button except the one that was just clicked (btn !== button), it removes the selected class.
-          //This ensures that only the clicked button will have the selected class, so only one button appears selected at a time.
-        if (btn !== button) {
-          btn.classList.remove('selected');
-        }
-      });
-    });
-  });
-
-  const submitButton = document.querySelector('.submit-button');
-  submitButton.addEventListener('submit', (event) =>{
-    event.preventDefault(); // Prevents the default form submission behavior
-    //You wnat to select the currently selected button
-    const selectedButton = document.querySelector('.rating-buttons .rating-button.selected');
-    
-    if (selectedButton) {
-      const selectedRating = selectedButton.innerHTML;
-      console.log('Selected rating:', selectedRating);
-      
-      // Update the thank you message with the selected rating
-      const thankYouMessage = document.querySelector('.selected-rating');
-      thankYouMessage.textContent = `You selected ${selectedRating} out of 5`;
-      
-      // Hide the rating container and show the thank you container
-      document.querySelector('.rating-container').classList.add('hidden');
-      thankYoucontainer.classList.remove('hidden');
-    } else {
-      alert('Please select a rating before submitting.');
-    }
-  })
-
-
-
-
-  const thankYoucontainer = document.querySelector('.thank-you-container'); */
-  
-  </script>
+ 
 </body>
 </html>
