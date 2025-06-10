@@ -182,9 +182,10 @@ button:hover{
         font-size: 0.875rem;
         line-height: 1.57;
         margin: 0 auto;
-        padding: 1em 5em;
+        padding: 1em 4em;
         border-radius: 50px;
-        background-color: var(--Grey-500);
+        background-color: var(--Grey-900);
+       box-shadow: 0 2px 16px 0 rgba(230, 223, 216, 0.096), 0 1.5px 8px 0 rgba(0,0,0,0.10);
     }
 
     .thank-you-container h1{
